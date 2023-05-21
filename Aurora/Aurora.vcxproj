@@ -104,10 +104,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\adm17\source\repos\Aurora\lib\libzip-1.9.2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\adm17\Downloads\zlib1213\zlib-1.2.13;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -128,6 +130,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Aurora.cpp" />
+    <ClCompile Include="AProtection.cpp" />
+    <ClCompile Include="Java_I.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AProtection.h" />
+    <ClInclude Include="Java_I.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
